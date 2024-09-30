@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "naturalgodocs_homes",
+  "info": {
+    "singularName": "naturalgodocs-home",
+    "pluralName": "naturalgodocs-homes",
+    "displayName": "naturalgodocs_Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discription": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

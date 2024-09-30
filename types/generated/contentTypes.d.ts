@@ -29,6 +29,35 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiNaturalgodocsHomeNaturalgodocsHome
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_homes';
+  info: {
+    singularName: 'naturalgodocs-home';
+    pluralName: 'naturalgodocs-homes';
+    displayName: 'naturalgodocs_Home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    discription: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-home.naturalgodocs-home'
+    >;
+  };
+}
+
 export interface PluginUploadFile extends Struct.CollectionTypeSchema {
   collectionName: 'files';
   info: {
@@ -883,6 +912,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ContentTypeSchemas {
       'api::blog.blog': ApiBlogBlog;
+      'api::naturalgodocs-home.naturalgodocs-home': ApiNaturalgodocsHomeNaturalgodocsHome;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
