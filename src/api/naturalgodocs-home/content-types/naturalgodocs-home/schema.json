@@ -4,7 +4,8 @@
   "info": {
     "singularName": "naturalgodocs-home",
     "pluralName": "naturalgodocs-homes",
-    "displayName": "naturalgodocs_Home"
+    "displayName": "naturalgodocs_Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "discription": {
+    "text": {
       "type": "richtext",
       "required": true
     }

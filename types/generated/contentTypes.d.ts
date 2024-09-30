@@ -36,13 +36,14 @@ export interface ApiNaturalgodocsHomeNaturalgodocsHome
     singularName: 'naturalgodocs-home';
     pluralName: 'naturalgodocs-homes';
     displayName: 'naturalgodocs_Home';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    discription: Schema.Attribute.RichText & Schema.Attribute.Required;
+    text: Schema.Attribute.RichText & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
