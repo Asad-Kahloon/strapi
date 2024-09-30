@@ -43,7 +43,7 @@ export interface ApiNaturalgodocsHomeNaturalgodocsHome
   };
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    text: Schema.Attribute.RichText & Schema.Attribute.Required;
+    text_doc: Schema.Attribute.RichText & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

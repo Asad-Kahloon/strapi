@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "text": {
+    "text_doc": {
       "type": "richtext",
       "required": true
     }
