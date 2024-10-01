@@ -35,6 +35,7 @@ export interface ApiBlogs2Blogs2 extends Struct.CollectionTypeSchema {
     singularName: 'blogs2';
     pluralName: 'blogs2s';
     displayName: 'Blogs2';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -61,6 +62,7 @@ export interface ApiBlogs2Blogs2 extends Struct.CollectionTypeSchema {
       }>;
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &
+      Schema.Attribute.Unique &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
