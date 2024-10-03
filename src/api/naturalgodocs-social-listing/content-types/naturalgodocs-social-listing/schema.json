@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "naturalgodocs_social_listings",
+  "info": {
+    "singularName": "naturalgodocs-social-listing",
+    "pluralName": "naturalgodocs-social-listings",
+    "displayName": "naturalgodocs_social_listing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

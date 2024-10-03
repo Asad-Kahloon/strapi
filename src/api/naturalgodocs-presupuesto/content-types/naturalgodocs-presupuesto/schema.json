@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "naturalgodocs_presupuestos",
+  "info": {
+    "singularName": "naturalgodocs-presupuesto",
+    "pluralName": "naturalgodocs-presupuestos",
+    "displayName": "naturalgodocs_presupuesto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
