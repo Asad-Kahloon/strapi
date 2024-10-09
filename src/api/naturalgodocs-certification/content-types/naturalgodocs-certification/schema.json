@@ -4,7 +4,8 @@
   "info": {
     "singularName": "naturalgodocs-certification",
     "pluralName": "naturalgodocs-certifications",
-    "displayName": "naturalgodocs_certification"
+    "displayName": "naturalgodocs_certification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,22 @@
     },
     "funciones": {
       "type": "richtext",
+      "required": true
+    },
+    "cargo": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "meses": {
+      "type": "string",
+      "required": true
+    },
+    "horas_mes": {
+      "type": "string",
       "required": true
     }
   }

@@ -588,6 +588,7 @@ export interface ApiNaturalgodocsCertificationNaturalgodocsCertification
     singularName: 'naturalgodocs-certification';
     pluralName: 'naturalgodocs-certifications';
     displayName: 'naturalgodocs_certification';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -596,6 +597,10 @@ export interface ApiNaturalgodocsCertificationNaturalgodocsCertification
     nombre: Schema.Attribute.String & Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     funciones: Schema.Attribute.RichText & Schema.Attribute.Required;
+    cargo: Schema.Attribute.String & Schema.Attribute.Required;
+    tipo: Schema.Attribute.String & Schema.Attribute.Required;
+    meses: Schema.Attribute.String & Schema.Attribute.Required;
+    horas_mes: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
