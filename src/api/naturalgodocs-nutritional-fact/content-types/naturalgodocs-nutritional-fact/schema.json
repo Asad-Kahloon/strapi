@@ -4,7 +4,8 @@
   "info": {
     "singularName": "naturalgodocs-nutritional-fact",
     "pluralName": "naturalgodocs-nutritional-facts",
-    "displayName": "naturalgodocs_nutritional_facts"
+    "displayName": "naturalgodocs_nutritional_facts",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,9 @@
     "text": {
       "type": "richtext",
       "required": true
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

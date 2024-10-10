@@ -691,7 +691,7 @@ export interface ApiNaturalgodocsHomeNaturalgodocsHome
   };
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    text_doc: Schema.Attribute.RichText & Schema.Attribute.Required;
+    text: Schema.Attribute.RichText & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
@@ -714,12 +714,14 @@ export interface ApiNaturalgodocsNutritionalFactNaturalgodocsNutritionalFact
     singularName: 'naturalgodocs-nutritional-fact';
     pluralName: 'naturalgodocs-nutritional-facts';
     displayName: 'naturalgodocs_nutritional_facts';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     text: Schema.Attribute.RichText & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
